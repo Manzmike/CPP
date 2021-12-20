@@ -1,0 +1,6 @@
+Encapsulation
+
+Part of the meaning of the word encapsulation is the idea of "surrounding" an entity, not just to keep what's inside together, but also to protect it.
+In object orientation, encapsulation means more than simply combining attributes and behavior together within a class; it also means restricting access to the inner workings of that class.
+
+The key principle here is that an object only reveals what the other application components require to effectively run the application. All else is kept out of view.
