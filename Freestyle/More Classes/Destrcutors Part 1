@@ -1,0 +1,29 @@
+Name of Section:
+Destructors
+Name of Subsection:
+Destructors Introudction
+Lesson Number:
+57.1
+
+
+Exaplanation: 
+Contructors are a special function because they are automatically called when a object is created
+Destructors are special functions 
+
+
+
+Example:
+
+NONE
+
+
+REASON:
+
+Objects are destroyed when they go out of scope or whenever the delete expression is applied to a pointer at an object of a certain class
+ 
+
+ Follow up Question:
+What is correct?
+
+
+COnstructors run  when an object is created; destrcutors runs when it is deleted.

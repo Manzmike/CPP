@@ -1,0 +1,32 @@
+Name of Section:
+Destructors
+Name of Subsection:
+Destructors
+Lesson Number:
+57.1
+
+
+Exaplanation: 
+Since Destrcutros cant take parameters , then they cant be overloaded
+Each class will have one destructor 
+
+
+
+Example:
+NONE
+
+REASON:
+NONE
+
+Foloow Up Question:
+Which of the following statements are true about destructors?
+
+A destructot cant have any parameters
+We cannot overload a destructor
+Destructor has no name
+Destrcutor always retyrns a doubel
+
+Answer:
+
+A destructor cant have any paramters
+We cannot overload a destrutor

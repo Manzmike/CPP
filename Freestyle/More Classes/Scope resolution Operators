@@ -1,0 +1,21 @@
+Scope resolution Operators
+
+The double colon is the cpp file is called ths scope resultion operator 
+
+Example 
+
+#include "MyClass.h"
+
+Myclass::MyClass()
+{
+	//ctor
+
+}
+''for the scope resolution operator is used when defining a particlar members functions
+
+Yet, in our case the classes fucntion has already been delcared
+Remeber that we defined the contrustors prototype in the header file 
+
+So the MyClass::MyClass() refers to the MyClass() member function
+
+OR in our case the consturctor of th MyClass clas
