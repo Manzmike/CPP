@@ -1,0 +1,51 @@
+Name of Section:
+Selection Operator
+Name of Subsection:
+Dot Operator
+Lesson Number:
+58.1
+
+
+Exaplanation: 
+We create a object of the class of MyClass , and call it's function of myPrint using the dot operator(.)
+
+Example:
+
+#include <iostream>
+using namespace std;
+
+class MyClass
+{
+    public:
+        MyClass();
+        void myPrint();
+};
+
+MyClass::MyClass() {
+}
+void MyClass::myPrint() {
+    cout <<"Hello"<<endl;
+}
+
+int main() {
+    MyClass obj;
+    obj.myPrint();
+}
+
+REASON:
+
+N/A
+
+Follow Up Question:
+Drag and drop from the options below to declare an object of class Sally in the main function, and call its myPrint member function using the . (dot) operator.
+
+Int main(){
+	____ obj;
+	____.____;
+}
+
+Answer:
+
+First Blank: Sally
+Second Blank: obj
+Third Blank: myPrint()

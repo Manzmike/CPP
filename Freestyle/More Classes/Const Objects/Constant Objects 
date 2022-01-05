@@ -1,0 +1,38 @@
+Name of Section:
+Const Objects
+Name of Subsection:
+Constant Objects
+Lesson Number:
+59.1
+
+Exaplanation: 
+With built in data types we can make a class object by using the const keyword
+
+All Const vair
+
+
+
+Example:
+Const MyClass obj;
+
+REASON:
+All const variables must be intialized when they are created. In cases of classes , this done with constructors 
+If a class isnt intialized used a paramterized constructor a public default conutcor must be provodied 
+If no public constrctor is provided a compilier error will occur
+
+Once a const object has been insitailized with a constructor ,the objects variables cant be modified .
+This inculdues both directly making changes to public variables and calling member functions that set the vaue of member variables
+
+
+Follow Up Question:
+
+Drag and drop from the options below to declare an object named ''st'' of type Student, then call its printAge() function.
+
+_______ st;
+st.______;
+
+
+Answer:
+
+Fiirst Blank: Student
+Second Blank: PrintAge();

@@ -1,0 +1,39 @@
+Name of Section:
+Selection Operator
+Name of Subsection:
+Selection Operator
+Lesson Number:
+58.1
+
+
+Exaplanation: 
+
+We created seperate header and source files for our class which resulted in this header file.
+
+ifndef stands for "if not defined". The first of statement tells the program to define the MyCLass header file if it hasnt been defined already. "endif" ends the condition
+
+
+
+Example:
+
+#ifndef MYCLASS_H
+#define MYCLASS_H
+
+class MyClass
+{
+  public:
+  MyClass();
+  protected:
+  private:
+};
+
+#endif // MYCLASS_H 
+
+REASON:
+this prevents from the header being included more than once in the file.
+
+Follow Up Question:
+What is the purpose of #ifndef #define directives in header files?
+
+Answer:
+They prevent a header file from being included more than once within one file

@@ -1,0 +1,73 @@
+Name of Section:
+Member Initializers
+Name of Subsection:
+Member Initializers
+Lesson Number:
+61.1
+
+
+Exaplanation: 
+The following class loctated in exmaples
+
+
+This class has two member variables , regVar and constVar ,
+It aslo has a constructorm that takes two paramters, this is used to intialize meber variables 
+Running this will cause an error becuase on of its memeber variables is a constant , which cannot be assigned a vlaue after declaration
+
+In cases like this a memeber intialzation list can be used to assign values to member variables.
+
+
+
+In the second exmaple the syntax , the intialization list follows the constructor parameters. The list begins with a colon(:)
+, and then lists each variable to be initalized , along with the value for the variable , with a comma to seprate them
+
+The syntax goes as
+
+variable(value)
+
+this helps assign values
+
+Example:
+Frist example without memeber intialzation
+class MyClass {
+  public:
+   MyClass(int a, int b) {
+    regVar = a;
+    constVar = b;
+   }
+  private:
+    int regVar;
+    const int constVar;
+};
+
+Second example with member intialzation
+
+class MyClass {
+ public:
+  MyClass(int a, int b)
+  : regVar(a), constVar(b)
+  {
+  }
+ private:
+  int regVar;
+  const int constVar;
+};
+
+
+
+
+REASON:
+
+
+Follow Up Question:
+You have a class ''Student'' with two members, "age" and "num". Fill in the blanks to initialize those members in the constructor initializer list with the corresponding values.
+
+Student::Student(int a, int b)
+____age(a),____(b){
+	
+}
+
+Answer:
+
+First Blank: Colom(:)
+Second Blank: num

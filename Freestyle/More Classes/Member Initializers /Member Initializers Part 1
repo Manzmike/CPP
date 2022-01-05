@@ -1,0 +1,30 @@
+Name of Section:
+Member Initializers
+Name of Subsection:
+Member Initializers
+Lesson Number:
+60.1
+
+
+Exaplanation: 
+COnstants are variables that cant be changed and const variables must be initalized at time of it's ceration
+
+C++ provides a handy syntax for intializing members of the class called memeber intializer list 
+Member initalizer list is also called a constructor intializer 
+
+Example:
+N/A
+
+REASON:
+N/A
+
+
+Follow Up Question:
+A constant variable...
+...can be modified
+...cannot be changed
+...must not be initialized
+
+Answer:
+
+...cannot be changed

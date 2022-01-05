@@ -1,0 +1,33 @@
+Name of Section:
+Selection Operators
+Name of Subsection:
+Pointers
+Lesson Number:
+58.1
+
+
+Exaplanation: 
+We can also use a pointer to access the objects members.
+THe following pointer pointers to the obj object
+
+
+Example:
+
+MyClass obj;
+MyClass *ptr = &obj;
+
+REASON:
+
+The type of pointer is MyClass as when it points to an object of that specfic type
+
+Follow Up Question:
+Fill in the blanks to declare a pointer to ''obj'':
+
+Sally obj;
+Sally ____sallyPtr = ____obj;
+
+
+Answer:
+
+First Blank: *
+Second Blank: &

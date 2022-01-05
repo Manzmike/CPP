@@ -1,0 +1,97 @@
+Name of Section:
+Selection Operator
+Name of Subsection:
+Selection Operator
+Lesson Number:
+58.1
+
+
+Exaplanation: 
+The arrow member selelction operator (->) is used to access an objects member with a pointer
+
+Example:
+
+#include <iostream>
+using namespace std;
+
+class MyClass
+{
+    public:
+        MyClass();
+        void myPrint();
+};
+
+MyClass::MyClass() {
+}
+void MyClass::myPrint() {
+    cout <<"Hello"<<endl;
+}
+
+int main() {
+    MyClass obj;
+    MyClass *ptr = &obj;
+    ptr->myPrint();
+}
+
+
+REASON:
+When we are working with a just a object use the dot operator selection tool to access (.)
+When we are using pointers we should use a pointer to the object , use the arrow member selection operator to access (->)
+
+Follow Up Question:
+
+You are creating a program to manage smartphones. The given code declares a Phone class, with its constructor and two methods: use() and getCharge().
+A Phone object is declared in main. Complete the code to call the getCharge() method using the correct selection operator.
+
+#include <iostream>
+using namespace std;
+
+class Phone
+{
+    public:
+        int charge;
+        Phone() {
+            charge = 100;
+        }
+        void use() {
+            charge -=10;
+        }
+        void getCharge() {
+            cout << charge;
+        }
+};
+
+int main() {
+    Phone p;
+    p.use();
+    Phone *ptr = &p;
+    ptr-> getCharge();
+    //call the getCharge() method on ptr
+    
+} 
+
+
+Answer:
+
+class Phone
+{
+    public:
+        int charge;
+        Phone() {
+            charge = 100;
+        }
+        void use() {
+            charge -=10;
+        }
+        void getCharge() {
+            cout << charge;
+        }
+};
+
+int main() {
+    Phone p;
+    p.use();
+    Phone *ptr = &p;
+    //call the getCharge() method on ptr
+    ptr-> getCharge();
+} 
