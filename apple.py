@@ -10,7 +10,6 @@ def dropped_frames(string):
 
     for i in range(len(string)):
         Split_Dataset = string.split("\n")[i]
-        print(Split_Dataset)
         compare +=len(Split_Dataset)
         itteration+=1
 
@@ -24,49 +23,38 @@ def dropped_frames(string):
                     index = 0
                 if itteration == 1:
                     min_itteration = int(arr[0])
-            
+        
+        
         frames_num.append(arr[0])
         if arr[1] == '0':
             contacts.append(arr[0])
 
-
         max_itteration = arr[0]
         if compare +itteration >= length:
-            print("max itteration:"+str(max_itteration))
-            print("min itteration:"+str(min_itteration))
-            print("frames_num:"+str(frames_num))
-            print("Contacts not registered are:"+str(contacts))
-
             i = int(min_itteration);k = 0
 
-                        while i != max_itteration:
-
-                if(i!=frames_num[k]):
-                    #print(f"You are missing the frame{frames_num[k]}")
-                    print("yes")
-
-                if(max_itteration == 256):
-                    i = 0
-
+            while i != int(max_itteration):
+                exist_count = frames_num.count(str(i))
+                if i == 256:
+                    i=0
+                if exist_count == 0:
+                    print(f"Missed Frame #{i}")
                 i+=1
-                k+=1
-
-
-
-                print("Yes")
-
-                
+            for k in range(len(contacts)):
+                print(f"Missed contacts are on Frame #{contacts[k]}")     
             return(1)
 
                
 
 if __name__ == "__main__":
-    print("Micahel Lindsay Apple Interview(HID Team) QE\n\n")
+    print("Micahel Lindsay Apple Interview(HID Team) QE")
+    print("Touch Data #1")
     touch_data = """Frame: Frame #   17 % 0xFFFF  position: 0x0F000000  status: 0x0000 contacts: 1\nFrame: Frame #   18 % 0xFFFF  position: 0x0F000000  status: 0x0000  contacts: 1\nFrame: Frame #   19 % 0xFFFF  position: 0x0F000000  status: 0x0000  contacts: 1\nFrame: Frame #   21 % 0xFFFF  position: 0x0F000000  status: 0x0000  contacts: 0\nFrame: Frame #   22 % 0xFFFF  position: 0x0F000000  status: 0x0000  contacts: 0\nFrame: Frame #   25 % 0xFFFF  position: 0x0F000000  status: 0x0000  contacts: 1\nFrame: Frame #   26 % 0xFFFF  position: 0x0F000000  status: 0x0000  contacts: 1\nFrame: Frame #   27 % 0xFFFF  position: 0x0F000000  status: 0x0000  contacts: 1"""
     dropped_frames(touch_data)
 
-    print("\n\n\n")
+
     # Data set 2
+    print("Touch Data #2")
     touch_data_2 = """Frame: Frame #  255 % 0xFFFF  position: 0x0F000000  status: 0x0000 contacts: 1\nFrame: Frame #    1 % 0xFFFF  position: 0x0F000000  status: 0x0000  contacts: 1\nFrame: Frame #    2 % 0xFFFF  position: 0x0F000000  status: 0x0000  contacts: 0\nFrame: Frame #    3 % 0xFFFF  position: 0x0F000000  status: 0x0000  contacts: 1\nFrame: Frame #    4 % 0xFFFF  position: 0x0F000000  status: 0x000F"""
     dropped_frames(touch_data_2)
 
