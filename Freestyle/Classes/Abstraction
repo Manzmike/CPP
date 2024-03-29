@@ -1,4 +1,0 @@
-/*Abstraction allows us to write a single bank account class, and then create different objects based on the class, for individual bank accounts, rather than creating a separate class for each bank account.*/
-
-
-
